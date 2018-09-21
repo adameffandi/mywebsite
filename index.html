@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Adam R. E | Web Dev</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Francois+One|Open+Sans|Dosis|Raleway" rel="stylesheet">
+
+  <!-- jquery js-->
+  <script type="text/javascript" src="{{ asset('/jquery/jquery-3.2.1.min.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="{{ asset('/bootstrap/css/bootstrap.min.css') }}">
+  <!-- Bootstrap js -->
+  <script type="text/javascript" src="{{ asset('/bootstrap/js/bootstrap.min.js') }}"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+
+</head>
+<body>
+
+
+  <div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">Adam R. E.</a>
+        </li>
+        <li>
+          <a href="#">About Me</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        {{-- <li>
+          <a href="#">Blogs</a>
+        </li> --}}
+        <li>
+          <a href="#">Contact Me</a>
+        </li>
+        {{-- <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">Dropdown heading</li>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li><a href="#">Separated link</a></li>
+        <li><a href="#">One more separated link</a></li>
+      </ul>
+        </li> --}}
+      </ul>
+    </nav>
+  <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="full-bg">
+              <div class="title">
+                <h1>Hello, I'm<span class="text-teal"> Adam Rahmat</span> </h1>
+                <h3>I <b>develop web</b> and stuff</h3>
+                {{-- <p>Web Developer | Laravel</p> --}}
+              </div> <!-- end title -->
+            </div> <!-- end full-bg -->
+
+          </div> <!-- end col -->
+        </div><!-- end row -->
+
+        <section class="about-section" id="about">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="align-center about-content">
+                <img src="{{asset('/img/profile.png')}}" alt="" class="about-me-img">
+                <h2><b>ABOUT <span class="text-teal">ADAM</span> </b></h2>
+                <hr class="hr-2-thick">
+                <p class="about-content-text">
+                  I'm a web developer based in Malaysia. I have been working as a full-stack web developer
+                  for 2 years since my internship. However, I am mostly passionate to be a front-end web developer
+                  and designer. I enjoyed designing clean and user-friendly UI/UX and materializing it using codes.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="education-experience-content">
+                <h2>Education & Experience</h2>
+                <hr class="hr-2-thick" align="left">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h4 class=""><b>2017 - Present</b></h4>
+                  </div>
+                  <div class="col-md-9">
+                    <h4 class="text-teal"><b>Web Developer - IIUM Advanced Technologies Sdn. Bhd.</b> </h4>
+                    <p>Website development using Laravel framework.</p>
+                  </div>
+                </div> <!-- end inside row -->
+                <div class="row">
+                  <div class="col-md-3">
+                    <h4 class=""><b>2017</b></h4>
+                  </div>
+                  <div class="col-md-9">
+                    <h4 class="text-teal"><b>SL1M Trainee - Khazanah Nasional SL1M Training Programme</b> </h4>
+                    <p>
+                      Underwent 1 month training programme at MMU focusing on big data skills, mainly using R, and softskills.
+                      Then 6 months on-the-job-training at IIUM Advanced Technologies Sdn. Bhd., continuing as a web developer.
+                    </p>
+                  </div>
+                </div> <!-- end inside row -->
+                <div class="row">
+                  <div class="col-md-3">
+                    <h4 class=""><b>2016 - 2017</b></h4>
+                  </div>
+                  <div class="col-md-9">
+                    <h4 class="text-teal"><b>Internship - IIUM Advanced Technologies Sdn. Bhd.</b> </h4>
+                    <p>Website design and development using Wordpress, Drupal and Laravel framework.</p>
+                  </div>
+                </div> <!-- end inside row -->
+                <div class="row">
+                  <div class="col-md-3">
+                    <h4 class=""><b>2011 - 2017</b></h4>
+                  </div>
+                  <div class="col-md-9">
+                    <h4 class="text-teal"><b>Degree in Information Technology - IIUM</b> </h4>
+                    <p>Bachelor's degree in Information Technology from Internation Islamic University, Malaysia</p>
+                  </div>
+                </div> <!-- end inside row -->
+              </div>
+            </div> <!-- end col -->
+          </div><!-- end row -->
+        </section>
+
+        <section class="portfolio-section" id="portfolio">
+          <div class="row">
+            <div class="col-md-12">
+                <h2 class="align-center"><b>PORTFOLIO</b></h2>
+                <hr class="hr-2-thick">
+            </div>
+          </div><!-- end row -->
+          <div class="row">
+            <div class="col-md-4 portfolio-item">
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-top">
+                  <h2 class="portfolio-item-title">I-IILM</h2>
+                  <button type="button" name="button" class="btn portfolio-item-btn" data-toggle="modal" data-target="#portfolio-details">Details</button>
+                </div>
+                <img src=" {{asset('img/portfolios/i-iilm.png')}} " alt="" class="portfolio-item-img">
+              </div> <!-- end overlay -->
+            </div>
+            <div class="col-md-4 portfolio-item">
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-top">
+                  <h2 class="portfolio-item-title">I-INTERN</h2>
+                  <button type="button" name="button" class="btn portfolio-item-btn" data-toggle="modal" data-target="#portfolio-details">Details</button>
+                </div>
+                <img src=" {{asset('img/portfolios/i-intern.png')}} " alt="" class="portfolio-item-img">
+              </div> <!-- end overlay -->
+            </div>
+            <div class="col-md-4 portfolio-item">
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-top">
+                  <h2 class="portfolio-item-title">MOTION-U</h2>
+                  <button type="button" name="button" class="btn portfolio-item-btn" data-toggle="modal" data-target="#portfolio-details">Details</button>
+                </div>
+                <img src=" {{asset('img/portfolios/motion-u.png')}} " alt="" class="portfolio-item-img">
+              </div> <!-- end overlay -->
+            </div>
+          </div><!-- end row -->
+          <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <div class="portfolio-item-overlay">
+                <div class="portfolio-item-top">
+                  <h2 class="portfolio-item-title">KIFFAH TRAVEL & TOURS</h2>
+                  <button type="button" name="button" class="btn portfolio-item-btn" data-toggle="modal" data-target="#portfolio-details">Details</button>
+                </div>
+                <img src=" {{asset('img/portfolios/kiffah1.png')}} " alt="" class="portfolio-item-img">
+              </div> <!-- end overlay -->
+            </div>
+            <div class="col-md-4 portfolio-item">
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-top">
+                  <h2 class="portfolio-item-title">IIUM ADVANCED TECHNOLOGIES SDN BHD</h2>
+                  <button type="button" name="button" class="btn portfolio-item-btn" data-toggle="modal" data-target="#portfolio-details">Details</button>
+                </div>
+                <img src=" {{asset('img/portfolios/iat.png')}} " alt="" class="portfolio-item-img">
+              </div> <!-- end overlay -->
+            </div>
+          </div> <!-- end row -->
+
+          @include('modals.portfolio-details')
+        </section>
+
+        {{-- <section class="blog-section" id="blog">
+          <div class="row">
+            <div class="col-md-12">
+                <h2 class="align-center"><b>BLOGS</b></h2>
+                <hr class="hr-2-thick">
+            </div>
+          </div><!-- end row -->
+          <div class="row">
+            <div class="col-md-12">
+              <figure>
+                <img src="{{asset('img/deadpool.jpg')}}" alt="" class="blog-post-img">
+                <figcaption>test</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section> --}}
+
+        <section class="contact-section" id="contact">
+          <div class="row">
+            <div class="col-md-12">
+                <h2 class="align-center"><b>CONTACT ME</b></h2>
+                <hr class="hr-2-thick">
+            </div>
+          </div><!-- end row -->
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>Get in touch, email me at</p>
+              <h2>adam.r.effandi@gmail.com</h2>
+            </div>
+          </div>
+        </section>
+
+
+
+
+      </div> <!-- end container -->
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <footer>
+      <p class="align-center">Copyright &copy; 2018 | Adam Rahmat Effandi</p>
+    </footer>
+
+  </div>
+  <!-- /#wrapper -->
+
+
+
+  <script type="text/javascript" src="{{ asset('/js/app.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('/js/custom.js') }}"></script>
+</body>
+</html>
