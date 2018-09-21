@@ -1,6 +1,6 @@
 /* ====================== general ======================= */
 body {
-  position: relative;
+  position: absolute;
   overflow-x: hidden;
 }
 
