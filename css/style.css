@@ -18,11 +18,33 @@ p {
   font-size: 18px;
 }
 
-section {
-  position: relative;
-  /* height: 650px; */
-  padding: 70px 150px 70px 150px;
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  section {
+    position: relative;
+    padding: 70px 50px 70px 50px;
+  }
 }
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  section {
+    position: relative;
+    padding: 70px 120px 70px 120px;
+  }
+}
+
+@media screen and (min-width: 781px) {
+  section {
+    position: relative;
+    padding: 70px 150px 70px 150px;
+  }
+}
+
+/* section {
+  position: relative;
+  padding: 50px 100px 50px 100px;
+} */
 
 .nav .open > a,
 .nav .open > a:hover,
@@ -121,9 +143,27 @@ section {
   position: relative;
 }
 
-.about-content-text {
-  padding-left: 150px;
-  padding-right: 150px;
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .about-content-text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .about-content-text {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (min-width: 781px) {
+  .about-content-text {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 .portfolio-section {
@@ -136,8 +176,32 @@ section {
   text-align: center;
 }
 
+/* @media screen and (min-width: 992px) and (max-width: 1080px){
+  .portfolio-item-img {
+    display: block;
+    width: 300px;
+    height: 150px;
+  }
+  
+  .portfolio-item-overlay{
+    position: relative;
+    width: 300px;
+    height: 150px;
+  }
+} */
+
+.portfolio-item-img {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+}
+
 .portfolio-item-overlay{
   position: relative;
+  width: 100%;
+  max-width: 100%;;
+  height: 300px;
 }
 
 .portfolio-item-overlay:before {
@@ -160,12 +224,7 @@ section {
   /* background: rgba(0,183,183, 0.7); */
 }
 
-.portfolio-item-img {
-  display: block;
-  width: 500px;
-  height: 300px;
-  background: rgba(0,255,255, 0.5);
-}
+
 
 .portfolio-item-top {
     position: absolute;
