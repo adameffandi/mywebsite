@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Bootstrap js -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+  <!-- font awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- Styles -->
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/style.css">
@@ -89,7 +90,7 @@
             </div>
             <div class="col-md-6">
               <div class="education-experience-content">
-                <h2 class="align-center"><b>Education & Experience</b></h2>
+                <h2 class="align-center"><b>Experience & Education</b></h2>
                 <hr class="hr-2-thick">
                 <div class="row">
                   <div class="col-md-3">
@@ -184,10 +185,19 @@
             <div class="col-md-4 portfolio-item">
               <div class="portfolio-item-overlay">
                 <div class="portfolio-item-top">
-                  <h2 class="portfolio-item-title">IIUM ADVANCED TECHNOLOGIES SDN BHD</h2>
+                  <h2 class="portfolio-item-title">IIUM ADVANCED TECHNOLOGIES</h2>
                   <button type="button" name="button" class="btn portfolio-item-btn" data-toggle="modal" data-target="#portfolio-details-iat">Details</button>
                 </div>
                 <img src="img/iat.PNG" alt="" class="portfolio-item-img">
+              </div> <!-- end overlay -->
+            </div>
+            <div class="col-md-4 portfolio-item">
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-top">
+                  <h2 class="portfolio-item-title">IIUM SHARIAH ADVISORY SERVICES</h2>
+                  <button type="button" name="button" class="btn portfolio-item-btn" data-toggle="modal" data-target="#portfolio-details-isas">Details</button>
+                </div>
+                <img src="img/isas.PNG" alt="" class="portfolio-item-img">
               </div> <!-- end overlay -->
             </div>
           </div> <!-- end row -->
@@ -196,13 +206,18 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">I-Iilm System</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                  <h3 class="modal-title">I-IILM System</h3>
+                  <button type="button" class="btn-close-modal" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times-circle"></i>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>
+                    I-Iilm is an integrated internationalized and industrial linkages management system. 
+                    It is developed for office of deputy rector (IICR). It aims to automate the business processes in offices under IICR and centralized its data. 
+                    The centralized data then can be visualize in the form of graph which makes it easier for the upper management to make business decision.
+                    Built using Laravel framework, Bootstrap, Javascripta and Metabase.
+                  </p>
                 </div>
                 <div class="modal-footer">
                   <a href="#" class="btn portfolio-item-btn" disabled>Coming Soon</a>
@@ -215,13 +230,17 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">I-Intern System</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                  <h3 class="modal-title">I-INTERN System</h3>
+                  <button type="button" class="btn-close-modal" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times-circle"></i>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>
+                    i-Intern is an internship management system that is developed for office of industrial link (OIL), IIUM. 
+                    It aims to centralize the internship process throughout IIUM and strengthen the connection between IIUM 
+                    and outsides industries. Built using Laravel framework, Bootstrap and Javascript.
+                  </p>
                 </div>
                 <div class="modal-footer">
                   <a href="#" class="btn portfolio-item-btn" disabled>Coming Soon</a>
@@ -234,16 +253,19 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Motion-u Incubator System</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                  <h3 class="modal-title">MOTION-U Incubator System</h3>
+                  <button type="button" class="btn-close-modal" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times-circle"></i>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>
+                    MOTION-U is a web application that is develop to encourage technopreneurship among IIUM students.
+                    Built using Laravel framework and Bootstrap.
+                  </p>
                 </div>
                 <div class="modal-footer">
-                  <a href="http://motionu.iatre.com.my/" class="btn portfolio-item-btn" target="_blank">VISIT</a>
+                  <a href="http://motionu.iatre.com.my/" class="btn portfolio-item-btn" target="_blank"><i class="fa fa-arrow-circle-right"></i> VIEW SITE</a>
                 </div>
               </div>
             </div>
@@ -253,16 +275,19 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Kiffah Travel & Tours Website</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                  <h3 class="modal-title">Kiffah Travel & Tours Website</h3>
+                  <button type="button" class="btn-close-modal" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times-circle"></i>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>
+                    Rebuild Kiffah's website using WordPress. Previously it was developed using old Flash.
+                    This is my first freelance projects.
+                  </p>
                 </div>
                 <div class="modal-footer">
-                  <a href="http://www.kiffah.com.my/V2/" class="btn portfolio-item-btn" target="_blank">VISIT</a>
+                  <a href="http://www.kiffah.com.my/V2/" class="btn portfolio-item-btn" target="_blank"><i class="fa fa-arrow-circle-right"></i> VIEW SITE</a>
                 </div>
               </div>
             </div>
@@ -272,16 +297,41 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">IIUM Advanced Technologies Website</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                  <h3 class="modal-title">IIUM Advanced Technologies Website</h3>
+                  <button type="button" class="btn-close-modal" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times-circle"></i>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>
+                    Rebuild IIUM Advanced Technologies (IAT) website using Wordpress. Previously it is a static
+                    website developed using HTML, CSS and Bootstrap. This is my first Wordpress project that I developed
+                    using WordPress. The shift to WordPress aims to make it easier for non-programmer to update the website.
+                  </p>
                 </div>
                 <div class="modal-footer">
-                  <a href="https://www.iat.com.my/v2/" class="btn portfolio-item-btn" target="_blank">VISIT</a>
+                  <a href="https://www.iat.com.my/v2/" class="btn portfolio-item-btn" target="_blank"><i class="fa fa-arrow-circle-right"></i> VIEW SITE</a>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end modal iat-->
+
+          <div class="modal" tabindex="-1" role="dialog" id="portfolio-details-isas">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">IIUM Shariah Advisory Services Website</h3>
+                  <button type="button" class="btn-close-modal" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times-circle"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Redesign IIUM Shariah Advisory Services' website using WordPress.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <a href="http://www.isas.com.my/" class="btn portfolio-item-btn" target="_blank"><i class="fa fa-arrow-circle-right"></i> VIEW SITE</a>
                 </div>
               </div>
             </div>
@@ -301,6 +351,21 @@
             <div class="col-md-12 text-center">
               <p>If you like my work and have some cool project to work on, just send me email or contact me through social sites listed below.</p>
               <h2 class="text-1">adam.r.effandi@gmail.com</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="social-network social-circle">
+                    <li>
+                      <a href="#" class="icoFacebook" title="Instagram"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <!-- <li>
+                      <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    </li> -->
+                    <li>
+                      <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
             </div>
           </div>
         </section>
