@@ -135,7 +135,7 @@ p {
   position: relative;
   padding: 0;
   margin: 0;
-  background: url("https://adameffandi.github.io/mywebsite/img/me1 color.png") no-repeat center center fixed;
+  background: url("https://adameffandi.github.io/mywebsite/img/me1_color.png") no-repeat center center fixed;
   /* background-color: #1B242F; */
   /*linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%),*/
   -webkit-background-size: cover;
