@@ -69,6 +69,11 @@ $(window).scroll(function(){
   }
 
   if(wScroll > $('.portfolio-section').offset().top - ($(window).height() / 1.3 )){
+    $('.portfolio-main-title').addClass('is-showing');
+    $('.portfolio-main-hr').addClass('is-showing');
+  }
+
+  if(wScroll > $('.portfolio-list').offset().top - ($(window).height() / 1.3 )){
     $('.portfolio-item').each(function(i){
       setTimeout(function(){
         $('.portfolio-item').eq(i).addClass('is-showing');
@@ -77,7 +82,8 @@ $(window).scroll(function(){
   }
 
   if(wScroll > $('.contact-section').offset().top - ($(window).height() / 1.3 )){
-    // $('.contact-title').addClass('is-showing');
+    $('.contact-title').addClass('is-showing');
+    $('.contact-hr').addClass('is-showing');
     $('.contact-word').addClass('is-showing');
     $('.contact-mail').addClass('is-showing');
   }
