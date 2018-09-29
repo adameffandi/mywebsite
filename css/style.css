@@ -152,10 +152,38 @@ p {
   left: 10%;
   right: 50%;
   /*text-align: center;*/
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.7s ease-in-out;
+}
+
+.title.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 .about-content {
   position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 1s ease-in-out;
+}
+
+.about-content.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.education-experience-content {
+  position: relative;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 1s ease-in-out;
+}
+
+.education-experience-content.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 .about-me-img {
@@ -195,6 +223,14 @@ p {
   padding: 20px;
   position: relative;
   text-align: center;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 1s ease-in-out;
+}
+
+.portfolio-item.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 /* @media screen and (min-width: 992px) and (max-width: 1080px){
@@ -210,13 +246,6 @@ p {
     height: 150px;
   }
 } */
-
-.portfolio-item-img {
-  display: inline-block;
-  width: 100%;
-  max-width: 100%;
-  height: 300px;
-}
 
 .portfolio-item-overlay{
   position: relative;
@@ -241,12 +270,15 @@ p {
 }
 
 .portfolio-item-overlay:hover:before {
-  /* background: rgba(255,108,62, 0.6); */
   background: rgba(0, 161, 167, 0.6);
-  /* background: rgba(39,39,39, 1); */
-  /* background: rgba(0,183,183, 0.7); */
 }
 
+.portfolio-item-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+}
 
 
 .portfolio-item-top {
@@ -296,6 +328,28 @@ p {
 .contact-section {
   background-color: #252934;
   color: #fff;
+}
+
+.contact-word{
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 1s ease-in-out;
+}
+
+.contact-word.is-showing{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.contact-mail{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-in-out;
+}
+
+.contact-mail.is-showing{
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .modal-dialog  {
