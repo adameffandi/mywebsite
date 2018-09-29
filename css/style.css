@@ -165,7 +165,7 @@ p {
 .about-content {
   position: relative;
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(-80px);
   transition: all 0.7s ease-in-out;
 }
 
@@ -177,7 +177,7 @@ p {
 .education-experience-content {
   position: relative;
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(80px);
   transition: all 0.7s ease-in-out;
 }
 
